@@ -20,7 +20,7 @@ export default function PortfolioDetails() {
         if (section) {
             handleMenuClick(section);
         }
-        window.history.replaceState(null, '', '/CaseStudyPage')
+        // window.history.replaceState(null, '', '/CaseStudyPage')
     }, []);
 
     const scrollToSection = (sectionId: string) => {
@@ -458,7 +458,7 @@ export default function PortfolioDetails() {
 
                                             {item.platform.split(',').map((temp, index) => (
 
-                                                <div className='PlatformText'>{temp}</div>
+                                                <div key={index} className='PlatformText'>{temp}</div>
 
                                             ))}
                                         </div>
