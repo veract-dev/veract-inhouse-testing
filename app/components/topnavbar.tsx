@@ -265,7 +265,7 @@ export default function TopnavBar() {
                           >
                             <a
                               className="customer "
-                              href="/MobileCaseStudy/edTech/"
+                              href="/customer-success/?category=content1"
                             >
                               Customer Success
                             </a>
@@ -299,7 +299,7 @@ export default function TopnavBar() {
                         >
                           <a
                             className="desktopPortfolioText flex items-center justify-center navbarCursor  whitespace-nowrap menu-item"
-                            href="/CaseStudy/?category=content1"
+                            href="/customer-success/?category=content1"
                           >
                             Customer Success
                           </a>
@@ -440,7 +440,7 @@ export default function TopnavBar() {
                   <div className="caseMain_Mobile">
                   <li className={`nav-item ${isOpen ? "visible" : "MediaHidden"}`}>
                     <div className={`nav-align ${isOpen ? "visible" : "MediaHidden"}`}>
-                      <div  className="caseMain_Mobile " onClick={handleToggle}><div className='desktopPortfolioText flex items-center justify-center navbarCursor  whitespace-nowrap menu-item' ><Link href="/MobileCaseStudy/machinevision" className="caseMain">Customer Success</Link></div></div>
+                      <div  className="caseMain_Mobile " onClick={handleToggle}><div className='desktopPortfolioText flex items-center justify-center navbarCursor  whitespace-nowrap menu-item' ><Link href="/customer-success/machinevision" className="caseMain">Customer Success</Link></div></div>
                       <div><hr className="testimonialsHr"></hr></div>
                     </div>
                   </li>
@@ -450,7 +450,7 @@ export default function TopnavBar() {
                   <div className="caseMain_desktop">
                   <li className={`nav-item ${isOpen ? "visible" : "MediaHidden"}`}>
                     <div className={`nav-align ${isOpen ? "visible" : "MediaHidden"}`}>
-                      <div  className="caseMain_desktop " onClick={handleToggle}><div className='desktopPortfolioText flex items-center justify-center navbarCursor  whitespace-nowrap' ><Link href="/CaseStudyPage" className="caseMain">Customer Success</Link></div></div>
+                      <div  className="caseMain_desktop " onClick={handleToggle}><div className='desktopPortfolioText flex items-center justify-center navbarCursor  whitespace-nowrap' ><Link href="/customer-successPage" className="caseMain">Customer Success</Link></div></div>
                       <div><hr className="testimonialsHr"></hr></div>
                     </div>
                   </li>

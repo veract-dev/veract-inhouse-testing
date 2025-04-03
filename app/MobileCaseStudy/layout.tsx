@@ -70,25 +70,25 @@ useEffect(()=>{
         mobileCustomerSuccess.filter((item) => item.id === 'content2') as MobileCustomerSuccessProps[]
       );
     }
-    if(pathname === "/MobileCaseStudy/health/"){
+    if(pathname === "/customer-success/health/"){
       setActivePage("content3")
       setSelectedPage(
         mobileCustomerSuccess.filter((item) => item.id === 'content3') as MobileCustomerSuccessProps[]
       );
     }
-    if(pathname === "/MobileCaseStudy/industrialPlatform/"){
+    if(pathname === "/customer-success/industrialPlatform/"){
       setActivePage("content4")
       setSelectedPage(
         mobileCustomerSuccess.filter((item) => item.id === 'content4') as MobileCustomerSuccessProps[]
       );
     }
-    if(pathname === "/MobileCaseStudy/eCommerce/" ){
+    if(pathname === "/customer-success/eCommerce/" ){
       setActivePage("content7")
       setSelectedPage(
         mobileCustomerSuccess.filter((item) => item.id === 'content7') as MobileCustomerSuccessProps[]
       );
     }
-    if(pathname === "/MobileCaseStudy/audit/" ){
+    if(pathname === "/customer-success/audit/" ){
       setActivePage("content9")
       setSelectedPage(
         mobileCustomerSuccess.filter((item) => item.id === 'content9') as MobileCustomerSuccessProps[]
@@ -158,61 +158,61 @@ useEffect(()=>{
             </div>
           </div>
           {/* <button id="1"
-                    onClick={() => sendToRoute('/MobileCaseStudy/health')}
+                    onClick={() => sendToRoute('/customer-success/health')}
                     className={`py-2 px-8 rounded-2xl ${
-                        pathname === '/MobileCaseStudy/health' ? 'bg-orange' : 'bg-gray-200'
+                        pathname === '/customer-success/health' ? 'bg-orange' : 'bg-gray-200'
                     } ${
-                        pathname === '/MobileCaseStudy/health' ? 'text-blue' : 'text-black'
+                        pathname === '/customer-success/health' ? 'text-blue' : 'text-black'
                     } cursor-pointer`}
                     >
                     Wellness  
                     </button>
                     <button id="2"
-                    onClick={()=> sendToRoute("/MobileCaseStudy/machinevision")}
+                    onClick={()=> sendToRoute("/customer-success/machinevision")}
                     className={`py-2 px-8 rounded-2xl ${
-                        pathname === '/MobileCaseStudy/sales' ? 'bg-orange' : 'bg-gray-200'
+                        pathname === '/customer-success/sales' ? 'bg-orange' : 'bg-gray-200'
                     } ${
-                        pathname === '/MobileCaseStudy/sales' ? 'text-white' : 'text-black'
+                        pathname === '/customer-success/sales' ? 'text-white' : 'text-black'
                     } cursor-pointer`}
                     >
                     Sales
                     </button>
                     <button id="3"
-                    onClick={() => sendToRoute("/MobileCaseStudy/machinevision")}
+                    onClick={() => sendToRoute("/customer-success/machinevision")}
                     className={`py-2 px-8 rounded-2xl ${
-                        pathname === '/MobileCaseStudy/machinevision' ? 'bg-orange' : 'bg-gray-200'
+                        pathname === '/customer-success/machinevision' ? 'bg-orange' : 'bg-gray-200'
                     } ${
-                        pathname === '/MobileCaseStudy/machinevision' ? 'text-white' : 'text-black'
+                        pathname === '/customer-success/machinevision' ? 'text-white' : 'text-black'
                     } cursor-pointer`}
                     >
                     Machine Vision
                     </button>
                     <button id="4"
-                    onClick={() => sendToRoute("/MobileCaseStudy/manufacturing")}
+                    onClick={() => sendToRoute("/customer-success/manufacturing")}
                     className={`py-2 px-8 rounded-2xl ${
-                        pathname === '/MobileCaseStudy/manufacturing' ? 'bg-orange' : 'bg-gray-200'
+                        pathname === '/customer-success/manufacturing' ? 'bg-orange' : 'bg-gray-200'
                     } ${
-                        pathname === '/MobileCaseStudy/manufacturing' ? 'text-white' : 'text-black'
+                        pathname === '/customer-success/manufacturing' ? 'text-white' : 'text-black'
                     } cursor-pointer`}
                     >
                     Manufacturing
                     </button>
                     <button id="5"
-                    onClick={() => sendToRoute("/MobileCaseStudy/agritech")}
+                    onClick={() => sendToRoute("/customer-success/agritech")}
                     className={`py-2 px-8 rounded-2xl ${
-                        pathname === '/MobileCaseStudy/agritech' ? 'bg-orange' : 'bg-gray-200'
+                        pathname === '/customer-success/agritech' ? 'bg-orange' : 'bg-gray-200'
                     } ${
-                        pathname === '/MobileCaseStudy/agritech' ? 'text-white' : 'text-black'
+                        pathname === '/customer-success/agritech' ? 'text-white' : 'text-black'
                     } cursor-pointer`}
                     >
                     Agri Tech
                     </button>
                     <button id="6"
-                    onClick={() => sendToRoute("/MobileCaseStudy/fintech")}
+                    onClick={() => sendToRoute("/customer-success/fintech")}
                     className={`py-2 px-8 rounded-2xl ${
-                        pathname === '/MobileCaseStudy/fintech' ? 'bg-orange' : 'bg-gray-200'
+                        pathname === '/customer-success/fintech' ? 'bg-orange' : 'bg-gray-200'
                     } ${
-                        pathname === '/MobileCaseStudy/fintech' ? 'text-white' : 'text-black'
+                        pathname === '/customer-success/fintech' ? 'text-white' : 'text-black'
                     } cursor-pointer`}
                     >
                     Fin Tech

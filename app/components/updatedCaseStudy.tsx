@@ -8,7 +8,7 @@ import '../styles/testimonials.css';
 export default function UpdatedCaseStudy() {
 
     const searchParams = useSearchParams();
-
+    const {push} = useRouter();
     const [isVisible, setIsVisible] = useState<boolean>(false);
     const [selectedTab, setSelectedTab] = useState<number>(1);
     const [showsite,setShowSite]=useState(true);
@@ -28,21 +28,25 @@ export default function UpdatedCaseStudy() {
     const handleMenuClick = (sectionId: string) => {
         const removePrefix = sectionId.replace('content', '');
         const parseToInt = parseInt(removePrefix, 10);
-        
+        push(`?category=${sectionId}, { scroll: false }`);
+
+
         // Immediately set the selected tab
         setSelectedTab(parseToInt);
+
         
         // Find and scroll to section
-        const sectionRef = contentRefs.current.find(ref => ref?.id === sectionId);
-        if (sectionRef) {
-            // Scroll to the top of the section instead of centering it
-            const yOffset = sectionRef.getBoundingClientRect().top + window.pageYOffset;
-            window.scrollTo({
-                top: yOffset,
-                behavior: 'smooth'
-            });
-        }
-    };
+        setTimeout(() => {
+            const sectionRef = contentRefs.current.find(ref => ref?.id === sectionId);
+            if (sectionRef) {
+                const yOffset = sectionRef.getBoundingClientRect().top + window.pageYOffset;
+                window.scrollTo({
+                    top: yOffset,
+                    behavior: 'smooth'
+                });
+            }
+        }, 0);
+    };
 
    
     

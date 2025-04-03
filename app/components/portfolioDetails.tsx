@@ -20,7 +20,7 @@ export default function PortfolioDetails() {
         if (section) {
             handleMenuClick(section);
         }
-        // window.history.replaceState(null, '', '/CaseStudyPage')
+        // window.history.replaceState(null, '', '/customer-successPage')
     }, []);
 
     const scrollToSection = (sectionId: string) => {

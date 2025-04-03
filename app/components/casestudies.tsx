@@ -134,7 +134,7 @@ export default function Casestudies() {
                       {
                         getCategory.setState({ category: item.id });
                         router.push({
-                          pathname: "/CaseStudy",
+                          pathname: "/customer-success",
                           query: { category: item.id },
                         });
                       }
@@ -172,7 +172,7 @@ export default function Casestudies() {
               ))}
             </div>
             {/* <div className='item flex flex-col contentWidth navbarCursor manufacturingHover md:w-1/3 p-4'>
-                        <Link href="/CaseStudyPage">
+                        <Link href="/customer-successPage">
                         <div className={`scroll-animationPortfolio ${isVisible ? 'visibleManufacturing' : ''}`}>
 
                             
@@ -193,7 +193,7 @@ export default function Casestudies() {
                     </div> */}
             {/* wellnessHover */}
             {/* <div className='item flex flex-col contentWidth navbarCursor manufacturingHover  md:w-1/3 p-4' >
-                        <Link href="/CaseStudyPage">
+                        <Link href="/customer-successPage">
                             <div className={`scroll-animationPortfolio ${isVisible ? 'visibleSales' : ''}`}>
                                 <div className='flex flex-row justify-between mb-2'>
                                 <div className='flex flex-row'>
@@ -211,7 +211,7 @@ export default function Casestudies() {
                     </div> */}
             {/* salesHover */}
             {/* <div className='item flex flex-col contentWidth navbarCursor salesHover md:w-1/3 p-4' >
-                        <Link href="/CaseStudyPage">
+                        <Link href="/customer-successPage">
                         <div className={`scroll-animationPortfolio ${isVisible ? 'visibleSales' : ''}`}>
                             <div className='flex flex-row  justify-between mb-2'>
                                 <div className='flex flex-row'>
@@ -230,7 +230,7 @@ export default function Casestudies() {
                     </div> */}
             {/* agriHover */}
             {/* <div className='item flex flex-col contentWidth navbarCursor agriHover md:w-1/3 p-4'>
-                        <Link href="/CaseStudyPage">
+                        <Link href="/customer-successPage">
                         <div className={`scroll-animationPortfolio ${isVisible ? 'visibleAgri' : ''}`}>
                             <div className='flex flex-row  justify-between mb-2'>
                                 <div className='flex flex-row'>
@@ -248,7 +248,7 @@ export default function Casestudies() {
                     </div> */}
             {/* hrHover */}
             {/* <div className='item flex flex-col contentWidth navbarCursor machinevisionHover md:w-1/3 p-4'>
-                        <Link href="/CaseStudyPage">
+                        <Link href="/customer-successPage">
                         <div className={`scroll-animationPortfolio ${isVisible ? 'visibleMachinevision' : ''}`}>
                             <div className='flex flex-row justify-between mb-2'>
                                 <div className="flex flex-row">
@@ -268,7 +268,7 @@ export default function Casestudies() {
                     </div> */}
             {/* fintechHover */}
             {/* <div className='item flex flex-col contentWidth navbarCursor fintechHover md:w-1/3 p-4 '>
-                        <Link href="/CaseStudyPage">
+                        <Link href="/customer-successPage">
                         <div className={`scroll-animationPortfolio ${isVisible ? 'visibleFintech' : ''}`}>
                             <div className='flex flex-row justify-between mb-2'>
                                 <div className='flex flex-row'>
@@ -297,7 +297,7 @@ export default function Casestudies() {
               onClick={() => {
                 {
                   setCategory("content1");
-                  router.push("/CaseStudy");
+                  router.push("/customer-success");
                 }
               }}
               className="item flex flex-col contentWidth manufacturingHover md:w-1/3 p-4"
@@ -314,7 +314,7 @@ export default function Casestudies() {
                   </div>
                 </div>
                 <div className="infoIconMobile ">
-                  {/* <Link href="/MobileCaseStudy/edTech"> */}
+                  {/* <Link href="/customer-success/edTech"> */}
                   <img
                     src="/images/info.png"
                     className="flex items-center justify-center  w-4 h-4"
@@ -336,7 +336,7 @@ export default function Casestudies() {
                 {
                   getCategory.setState({ category: "content3" });
                   router.push({
-                    pathname: "/CaseStudy",
+                    pathname: "/customer-success",
                     query: { category: "content3" },
                   });
                 }
@@ -355,7 +355,7 @@ export default function Casestudies() {
                   </div>
                 </div>
                 <div className="infoIconMobile ">
-                  {/* <Link href="/MobileCaseStudy/health"> */}
+                  {/* <Link href="/customer-success/health"> */}
                   <img
                     src="/images/info.png"
                     className="flex items-center justify-center  w-4 h-4"
@@ -380,7 +380,7 @@ export default function Casestudies() {
                                 <div className='item-title flex textColorLogo pl-4'>WELLNESS</div>
                                 </div>
                                 <div className='infoIconMobile'>
-                                    <Link href="/MobileCaseStudy/health">
+                                    <Link href="/customer-success/health">
                                     <img src="images/info.png" className='flex items-center justify-center  w-4 h-4'></img>
                                     </Link>
                                   
@@ -397,7 +397,7 @@ export default function Casestudies() {
                 {
                   getCategory.setState({ category: "content2" });
                   router.push({
-                    pathname: "/CaseStudy",
+                    pathname: "/customer-success",
                     query: { category: "content2" },
                   });
                 }
@@ -415,7 +415,7 @@ export default function Casestudies() {
                   </div>
                 </div>
                 <div className="infoIconMobile">
-                  {/* <Link href="/MobileCaseStudy/machinevision"> */}
+                  {/* <Link href="/customer-success/machinevision"> */}
                   <img src="/images/info.png" className="w-4 h-4"></img>
                   {/* </Link> */}
                 </div>
@@ -432,7 +432,7 @@ export default function Casestudies() {
                 {
                   getCategory.setState({ category: "content4" });
                   router.push({
-                    pathname: "/CaseStudy",
+                    pathname: "/customer-success",
                     query: { category: "content4" },
                   });
                 }
@@ -450,7 +450,7 @@ export default function Casestudies() {
                   </div>
                 </div>
                 <div className="infoIconMobile">
-                  {/* <Link href="/MobileCaseStudy/industrialPlatform"> */}
+                  {/* <Link href="/customer-success/industrialPlatform"> */}
                   <img src="/images/info.png" className="w-4 h-4"></img>
                   {/* </Link> */}
                 </div>
@@ -489,7 +489,7 @@ export default function Casestudies() {
                 {
                   getCategory.setState({ category: "content5" });
                   router.push({
-                    pathname: "/CaseStudy",
+                    pathname: "/customer-success",
                     query: { category: "content5" },
                   });
                 }
@@ -507,7 +507,7 @@ export default function Casestudies() {
                   </div>
                 </div>
                 <div className="infoIconMobile">
-                  {/* <Link href="/MobileCaseStudy/eCommerce"> */}
+                  {/* <Link href="/customer-success/eCommerce"> */}
                   <img src="/images/info.png" className="w-4 h-4"></img>
                   {/* </Link> */}
                 </div>
@@ -526,7 +526,7 @@ export default function Casestudies() {
                 {
                   getCategory.setState({ category: "content6" });
                   router.push({
-                    pathname: "/CaseStudy",
+                    pathname: "/customer-success",
                     query: { category: "content6" },
                   });
                 }
@@ -545,7 +545,7 @@ export default function Casestudies() {
                   </div>
                 </div>
                 <div className="infoIconMobile ">
-                  {/* <Link href="/MobileCaseStudy/audit"> */}
+                  {/* <Link href="/customer-success/audit"> */}
                   <img
                     src="/images/info.png"
                     className="flex items-center justify-center  w-4 h-4"

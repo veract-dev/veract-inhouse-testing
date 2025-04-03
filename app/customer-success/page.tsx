@@ -57,6 +57,8 @@ const Page = () => {
             setSelectedPage(
                 mobileCustomerSuccess.filter((item) => item.id === queryCategory) as MobileCustomerSuccessProps[]
             );
+        } else {
+          router.push('/customer-success/?category=content1')          
         }
     }, [searchParams]);
 
@@ -72,7 +74,7 @@ const Page = () => {
 
     const handleClick = (id: string) => {
         setCategory(id);
-        router.push(`/CaseStudy?category=${id}`);
+        router.push(`/customer-success?category=${id}`);
         setSelectedPage(
             mobileCustomerSuccess.filter((item) => item.id === id) as MobileCustomerSuccessProps[]
         );
