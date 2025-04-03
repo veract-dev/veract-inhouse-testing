@@ -8,7 +8,7 @@ import '../styles/testimonials.css';
 export default function UpdatedCaseStudy() {
 
     const searchParams = useSearchParams();
-    const {push} = useRouter();
+    const router = useRouter();
     const [isVisible, setIsVisible] = useState<boolean>(false);
     const [selectedTab, setSelectedTab] = useState<number>(1);
     const [showsite,setShowSite]=useState(true);
@@ -28,25 +28,23 @@ export default function UpdatedCaseStudy() {
     const handleMenuClick = (sectionId: string) => {
         const removePrefix = sectionId.replace('content', '');
         const parseToInt = parseInt(removePrefix, 10);
-        push(`?category=${sectionId}, { scroll: false }`);
-
-
+        
         // Immediately set the selected tab
         setSelectedTab(parseToInt);
-
         
         // Find and scroll to section
-        setTimeout(() => {
-            const sectionRef = contentRefs.current.find(ref => ref?.id === sectionId);
-            if (sectionRef) {
-                const yOffset = sectionRef.getBoundingClientRect().top + window.pageYOffset;
-                window.scrollTo({
-                    top: yOffset,
-                    behavior: 'smooth'
-                });
-            }
-        }, 0);
-    };
+        const sectionRef = contentRefs.current.find(ref => ref?.id === sectionId);
+        if (sectionRef) {
+            // Scroll to the top of the section instead of centering it
+            const yOffset = sectionRef.getBoundingClientRect().top + window.pageYOffset;
+            window.scrollTo({
+                top: yOffset,
+                behavior: 'smooth'
+            });
+        }
+        window.history.pushState(null, '', `/customer-success/?category=content${parseToInt}`);
+
+    };
 
    
     
@@ -436,7 +434,6 @@ export default function UpdatedCaseStudy() {
             const removePrefix = section.replace('content', '');
             const parseToInt = parseInt(removePrefix, 10);
             setSelectedTab(parseToInt);
-            
             // Delay the scroll slightly to ensure the tab is selected first
             setTimeout(() => {
                 handleMenuClick(section);
@@ -444,6 +441,7 @@ export default function UpdatedCaseStudy() {
         } else {
             setSelectedTab(1);
         }
+
 
         // window.history.replaceState(null, '', '/cutomer-success');
     }, [searchParams]);
@@ -480,6 +478,8 @@ export default function UpdatedCaseStudy() {
                 
                 if (closestSection !== null && closestSection !== selectedTab) {
                     setSelectedTab(closestSection);
+                    console.log(closestSection)
+                    window.history.pushState(null, '', `/customer-success/?category=content${closestSection}`);
                 }
             }, 100); // Debounce time of 100ms
         };

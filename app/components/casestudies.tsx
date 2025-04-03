@@ -129,17 +129,14 @@ export default function Casestudies() {
                   key={item.id}
                   className="item flex flex-col contentWidth navbarCursor manufacturingHover md:w-1/3 p-4"
                 >
-                  <div
-                    onClick={() => {
-                      {
-                        getCategory.setState({ category: item.id });
-                        router.push({
-                          pathname: "/customer-success",
-                          query: { category: item.id },
-                        });
-                      }
-                    }}
-                  >
+<div
+    onClick={() => {
+        getCategory.setState({ category: item.id });
+        router.push(`/customer-success?category=${item.id}`); // Remove scroll option
+    }}
+>
+
+
                     <div
                       className={`scroll-animationPortfolio ${
                         isVisible ? "visibleManufacturing" : ""
