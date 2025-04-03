@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { getCategory } from "../globalState";
 import mobileCustomerSuccess from "../mobileCustomerSuccess";
+import UpdatedCaseStudy from "../components/updatedCaseStudy";
 
 interface MobileCustomerSuccessProps {
     id: string;
@@ -297,7 +298,7 @@ const Page = () => {
       ) : (
         <div>
           <TopnavBar />
-          <PortfolioDetails />
+          <UpdatedCaseStudy />
           <Footer />
         </div>
       );

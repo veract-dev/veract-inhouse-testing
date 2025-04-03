@@ -425,7 +425,7 @@ export default function UpdatedCaseStudy() {
 
     useEffect(() => {
         document.title = "Veract";
-        const section = searchParams?.get("id") ?? "";
+        const section = searchParams?.get("category") ?? "";
 
         if (section) {
             // Just set the selected tab without scrolling
@@ -441,7 +441,7 @@ export default function UpdatedCaseStudy() {
             setSelectedTab(1);
         }
 
-        window.history.replaceState(null, '', '/cutomer-success');
+        // window.history.replaceState(null, '', '/cutomer-success');
     }, [searchParams]);
     
     useEffect(() => {

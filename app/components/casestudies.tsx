@@ -129,10 +129,15 @@ export default function Casestudies() {
                   key={item.id}
                   className="item flex flex-col contentWidth navbarCursor manufacturingHover md:w-1/3 p-4"
                 >
-                  <Link
-                    href={{
-                      pathname: "/updatedCaseStudy",
-                      query: { id: item.id },
+                  <div
+                    onClick={() => {
+                      {
+                        getCategory.setState({ category: item.id });
+                        router.push({
+                          pathname: "/CaseStudy",
+                          query: { category: item.id },
+                        });
+                      }
                     }}
                   >
                     <div
@@ -160,7 +165,7 @@ export default function Casestudies() {
                         {item.desc}
                       </div>
                     </div>
-                  </Link>
+                  </div>
                   {/* <div className='manufacturingArrow  '> <img src="portfolio/rightArrow.png" className="w-8 " /></div> */}
                 </div>
                 // </div>
@@ -390,11 +395,11 @@ export default function Casestudies() {
             <div
               onClick={() => {
                 {
-                    getCategory.setState({ category: "content2" });
-                    router.push({
-                      pathname: "/CaseStudy",
-                      query: { category: "content2" },
-                    });
+                  getCategory.setState({ category: "content2" });
+                  router.push({
+                    pathname: "/CaseStudy",
+                    query: { category: "content2" },
+                  });
                 }
               }}
               className="item flex flex-col contentWidth salesHover md:w-1/3 p-4"
@@ -425,11 +430,11 @@ export default function Casestudies() {
             <div
               onClick={() => {
                 {
-                    getCategory.setState({ category: "content4" });
-                    router.push({
-                      pathname: "/CaseStudy",
-                      query: { category: "content4" },
-                    });
+                  getCategory.setState({ category: "content4" });
+                  router.push({
+                    pathname: "/CaseStudy",
+                    query: { category: "content4" },
+                  });
                 }
               }}
               className="item flex flex-col contentWidth agriHover md:w-1/3 p-4"
@@ -482,11 +487,11 @@ export default function Casestudies() {
             <div
               onClick={() => {
                 {
-                    getCategory.setState({ category: "content5" });
-                    router.push({
-                      pathname: "/CaseStudy",
-                      query: { category: "content5" },
-                    });
+                  getCategory.setState({ category: "content5" });
+                  router.push({
+                    pathname: "/CaseStudy",
+                    query: { category: "content5" },
+                  });
                 }
               }}
               className="item flex flex-col contentWidth fintechHover md:w-1/3 p-4 "
@@ -519,11 +524,11 @@ export default function Casestudies() {
             <div
               onClick={() => {
                 {
-                    getCategory.setState({ category: "content6"});
-                    router.push({
-                      pathname: "/CaseStudy",
-                      query: { category: "content6" },
-                    });
+                  getCategory.setState({ category: "content6" });
+                  router.push({
+                    pathname: "/CaseStudy",
+                    query: { category: "content6" },
+                  });
                 }
               }}
               className="item flex flex-col contentWidth manufacturingHover md:w-1/3 p-4"
