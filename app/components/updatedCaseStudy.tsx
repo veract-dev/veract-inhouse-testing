@@ -481,7 +481,7 @@ export default function UpdatedCaseStudy() {
                     console.log(closestSection)
                     window.history.pushState(null, '', `/customer-success/?category=content${closestSection}`);
                 }
-            }, 100); // Debounce time of 100ms
+            }); // Debounce time of 100ms
         };
 
         window.addEventListener('scroll', handleScroll);

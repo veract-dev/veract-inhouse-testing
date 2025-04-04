@@ -100,7 +100,8 @@ export default function TopnavBar() {
       ? "Home"
       : pathname === "/updatedCaseStudy/"
       ? "CustomerSuccess"
-      : ""
+      : pathname === '/customer-success/'
+      ? "CustomerSuccess" : ""
   );
 
   console.log("activeSection", activeSection);
