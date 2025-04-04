@@ -1,7 +1,7 @@
 const mobileCustomerSuccess = 
 [
     {
-        id: 'content1',
+        id: 'edTech',
         title:"EdTech ",
         activeIcon:"/mobileCaseStudiesIcons/M_edTech_A.svg",
         inActiveIcon:"/mobileCaseStudiesIcons/M_edTech_IA.svg",
@@ -22,7 +22,7 @@ const mobileCustomerSuccess =
         clientSpeakDesc: "",
     },
     {
-        id: 'content2',
+        id: 'machineVision',
         title:"Machine Vision",
         activeIcon:"/mobileCaseStudiesIcons/M_MachineVision_A.svg",
         inActiveIcon:"/mobileCaseStudiesIcons/M_MachineVision_IA.svg",
@@ -39,7 +39,7 @@ const mobileCustomerSuccess =
         clientSpeakDesc: "",
     },
     {
-        id: 'content3',
+        id: 'wellness',
         title:"Wellness",
         activeIcon:"/mobileCaseStudiesIcons/M_Wellness_A.svg",
         inActiveIcon:"/mobileCaseStudiesIcons/M_Wellness_IA.svg",
@@ -60,7 +60,7 @@ const mobileCustomerSuccess =
         clientSpeakDesc: "",
     },
     {
-        id: 'content4',
+        id: 'industrialPlatform',
         title:"Industrial Platform",
         activeIcon:"/mobileCaseStudiesIcons/M_IndustialPlatform_A.svg",
         inActiveIcon:"/mobileCaseStudiesIcons/M_IndustialPlatform_IA.svg",
@@ -81,7 +81,7 @@ const mobileCustomerSuccess =
         clientSpeakDesc: "Our engagement with veract for Datacenter Mart project has been a fantastic experience. The team was very prompt and supportive throughout the project. We are very happy with the outcome and we expect to start the second phase soon. This is a very complex project because we did not have an exact comparison to show them but they grasped the requirements well and was able to deliver what we expected.",
     },
     {
-        id: 'content5',
+        id: 'manufacturing',
         title:"Manufacturing",
         activeIcon:"/mobileCaseStudiesIcons/M_Manufacturing_A.svg",
         inActiveIcon:"/mobileCaseStudiesIcons/manufacturing_IA.webp",
@@ -100,7 +100,7 @@ const mobileCustomerSuccess =
         clientSpeakDesc: "",
     },
     {
-        id: 'content6',
+        id: 'agriTech',
         title:"AgriTech",
         activeIcon:"/mobileCaseStudiesIcons/M_agriTech_A.svg",
         inActiveIcon:"/mobileCaseStudiesIcons/M_agriTech_IA.svg",
@@ -129,7 +129,7 @@ const mobileCustomerSuccess =
         clientSpeakDesc: "We engaged with Veract team from an early stage and they helped build out our \‘KiViStar\’ App from basic day one concept. Their choice of architechture, framework and ability to deliver the product helped us go to market quickly. This helped us focus on our core work.",
     },
     {
-        id: 'content7',
+        id: 'eCommerce',
         title:"Ecommerce",
         activeIcon:"/mobileCaseStudiesIcons/M_ecom_A.svg",
         inActiveIcon:"/mobileCaseStudiesIcons/M_ecom_IA.svg",
@@ -150,7 +150,7 @@ const mobileCustomerSuccess =
         clientSpeakDesc: "",
     },
     {
-        id: 'content8',
+        id: 'sales',
         title:"Sales",
         activeIcon:"/mobileCaseStudiesIcons/M_sales_A.svg",
         inActiveIcon:"/mobileCaseStudiesIcons/M_sales_IA.svg",
@@ -176,7 +176,7 @@ const mobileCustomerSuccess =
         clientSpeakDesc: "Excellent prompt support inspite of remote location.",
     },
     {
-        id: 'content9',
+        id: 'audit',
         title:"Audit",
         activeIcon:"/mobileCaseStudiesIcons/M_audit_A.svg",
         inActiveIcon:"/mobileCaseStudiesIcons/M_audit_IA.svg",
@@ -197,7 +197,7 @@ const mobileCustomerSuccess =
         clientSpeakDesc: "",
     },
     {
-        id: 'content10',
+        id: 'finTech',
         title:"Fintech",
         activeIcon:"/mobileCaseStudiesIcons/M_finTech_A.svg",
         inActiveIcon:"/mobileCaseStudiesIcons/M_finTech_IA.svg",
@@ -218,7 +218,7 @@ const mobileCustomerSuccess =
         clientSpeakDesc: "",
     },
     {
-        id: 'content11',
+        id: 'thermalVision',
         title:"Thermal Vision",
         activeIcon:"/mobileCaseStudiesIcons/M_TV_A.svg",
         inActiveIcon:"/mobileCaseStudiesIcons/M_TV_IA.svg",

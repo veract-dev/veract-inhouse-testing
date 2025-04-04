@@ -38,7 +38,7 @@ export default function PortfolioDetails() {
 
     const portfolio = [
         {
-            id: 'content1',
+            id: 'edTech',
             caseTitle: ' AI-enabled Edtech platform',
             caseTitleContent: 'Evolve is an edtech platform that revolutionizes augmented learning',
             stampImage: "",
@@ -63,7 +63,7 @@ export default function PortfolioDetails() {
             ]
         },
         {
-            id: 'content2',
+            id: 'machineVision',
             caseTitle: 'Machine Vision for Manufacturing Quality Control',
             caseTitleContent: 'A sheet metal pressings manufacturing company.',
             stampImage: "/portfolio/artificial-intelligence.png",
@@ -82,7 +82,7 @@ export default function PortfolioDetails() {
             seperator: <hr className='separatorPortfolio'></hr>
         },
         {
-            id: 'content3',
+            id: 'wellness',
             caseTitle: 'Health and Wellness Web and Mobile App',
             caseTitleContent: 'Anyo is a health and wellness app that addresses the significant issue of mental health.',
             stampImage: "",
@@ -111,7 +111,7 @@ export default function PortfolioDetails() {
             ]
         },
         {
-            id: 'content4',
+            id: 'industrialPlatform',
             caseTitle: 'Social platform for the fast-growing data center businesses.',
             caseTitleContent: 'Data Center Mart is an initiative of IBITS',
             stampImage: "",
@@ -130,7 +130,7 @@ export default function PortfolioDetails() {
             seperator: <hr className='separatorPortfolio'></hr>
         },
         {
-            id: 'content5',
+            id: 'manufacturing',
             caseTitle: 'Quality Documentation for Metal Foundry',
             caseTitleContent: 'An automated quality report generation system was needed by the Grey Iron and Ductile Iron Foundry in order to submit reports to customers.',
             stampImage: "",
@@ -148,7 +148,7 @@ export default function PortfolioDetails() {
             seperator: <hr className='separatorPortfolio'></hr>
         },
         {
-            id: 'content6',
+            id: 'agriTech',
             caseTitle: 'Agriculture Finance Ecosystem Web Application ',
             caseTitleContent: 'Agrosperity KiVi is a phygital platform that makes it easy for farmers and other rural and agribusiness owners to obtain funds quickly and effectively.',
             stampImage: "",
@@ -167,7 +167,7 @@ export default function PortfolioDetails() {
             seperator: <hr className='separatorPortfolio'></hr>
         },
         {
-            id: 'content7',
+            id: 'eCommerce',
             caseTitle: 'E-commerce site for agricultural produce',
             caseTitleContent: 'Beanstalk operates in the exciting farm-to-table space',
             stampImage: "",
@@ -192,7 +192,7 @@ export default function PortfolioDetails() {
             ]
         },
         {
-            id: 'content8',
+            id: 'sales',
             caseTitle: 'Sales Enquiry and Quote Management',
             caseTitleContent: 'Rajdeep is a pune-based distributor of industrial products with multiple principals, multiple products, in multiple locations.',
             stampImage: "",
@@ -217,7 +217,7 @@ export default function PortfolioDetails() {
             ]
         },
         {
-            id: 'content9',
+            id: 'audit',
             caseTitle: 'Data extraction for the audit industry',
             caseTitleContent: 'Financial audit firm with over 100 associates',
             stampImage: "",
@@ -236,7 +236,7 @@ export default function PortfolioDetails() {
             seperator: <hr className='separatorPortfolio'></hr>
         },
         {
-            id: 'content10',
+            id: 'thermalVision',
             caseTitle: ' Credit Risk Assessment and Risk Profiling ',
             caseTitleContent: 'Northern Arc Capital is a financial services platform that was established primarily to meet various credit needs of businesses and households that are underserved.',
             stampImage: "",
@@ -298,35 +298,35 @@ export default function PortfolioDetails() {
 
         if (activeMenu) {
 
-            activeMenu.id == 'content1' ? setEdTechColor("white") : setEdTechColor("#7f7f7f");
-            activeMenu.id == 'content1' ? setEdTechImage('/portfolio/edTechTabImageSelected.png') : setEdTechImage('/portfolio/edTechTabImage.png');
+            activeMenu.id == 'edTech' ? setEdTechColor("white") : setEdTechColor("#7f7f7f");
+            activeMenu.id == 'edTech' ? setEdTechImage('/portfolio/edTechTabImageSelected.png') : setEdTechImage('/portfolio/edTechTabImage.png');
 
-            activeMenu.id == 'content2' ? setManufacturingColor_1("white") : setManufacturingColor_1("#7f7f7f");
-            activeMenu.id == 'content2' ? setManufacturingImage_1("/dashboard/manufacturingWhite.png") : setManufacturingImage_1("/dashboard/manufacturingGrey.png");
+            activeMenu.id == 'machineVision' ? setManufacturingColor_1("white") : setManufacturingColor_1("#7f7f7f");
+            activeMenu.id == 'machineVision' ? setManufacturingImage_1("/dashboard/manufacturingWhite.png") : setManufacturingImage_1("/dashboard/manufacturingGrey.png");
 
-            activeMenu.id == 'content3' ? setWellnessColor("white") : setWellnessColor("#7f7f7f");
-            activeMenu.id == 'content3' ? setWellnessImage('/dashboard/wellnessWhite.png') : setWellnessImage('/dashboard/wellnessGrey.png');
+            activeMenu.id == 'wellness' ? setWellnessColor("white") : setWellnessColor("#7f7f7f");
+            activeMenu.id == 'wellness' ? setWellnessImage('/dashboard/wellnessWhite.png') : setWellnessImage('/dashboard/wellnessGrey.png');
 
-            activeMenu.id == 'content4' ? setIndustrialPlatformColor("white") : setIndustrialPlatformColor("#7f7f7f");
-            activeMenu.id == 'content4' ? setIndustrialPlatformImage("/portfolio/network (2).png") : setIndustrialPlatformImage("/portfolio/network (1).png");
+            activeMenu.id == 'industrialPlatform' ? setIndustrialPlatformColor("white") : setIndustrialPlatformColor("#7f7f7f");
+            activeMenu.id == 'industrialPlatform' ? setIndustrialPlatformImage("/portfolio/network (2).png") : setIndustrialPlatformImage("/portfolio/network (1).png");
 
-            activeMenu.id == 'content5' ? setManufacturingColor_2("white") : setManufacturingColor_2("#7f7f7f");
-            activeMenu.id == 'content5' ? setManufacturingImage_2("/dashboard/manufacturingWhite.png") : setManufacturingImage_2("/dashboard/manufacturingGrey.png");
+            activeMenu.id == 'manufacturing' ? setManufacturingColor_2("white") : setManufacturingColor_2("#7f7f7f");
+            activeMenu.id == 'manufacturing' ? setManufacturingImage_2("/dashboard/manufacturingWhite.png") : setManufacturingImage_2("/dashboard/manufacturingGrey.png");
 
-            activeMenu.id == 'content6' ? setAgriColor("white") : setAgriColor("#7f7f7f");
-            activeMenu.id == 'content6' ? setAgriImage("/dashboard/agriWhite.png") : setAgriImage("/dashboard/agriGrey.png");
+            activeMenu.id == 'agriTech' ? setAgriColor("white") : setAgriColor("#7f7f7f");
+            activeMenu.id == 'agriTech' ? setAgriImage("/dashboard/agriWhite.png") : setAgriImage("/dashboard/agriGrey.png");
 
-            activeMenu.id == 'content7' ? setEcomColor("white") : setEcomColor("#7f7f7f");
-            activeMenu.id == 'content7' ? setEcomImage("/portfolio/grocery-store (2).png") : setEcomImage("/portfolio/grocery-store (1).png");
+            activeMenu.id == 'eCommerce' ? setEcomColor("white") : setEcomColor("#7f7f7f");
+            activeMenu.id == 'eCommerce' ? setEcomImage("/portfolio/grocery-store (2).png") : setEcomImage("/portfolio/grocery-store (1).png");
 
-            activeMenu.id == 'content8' ? setSalesColor("white") : setSalesColor("#7f7f7f");
-            activeMenu.id == 'content8' ? setSalesImage("/dashboard/salesWhite.png") : setSalesImage("/dashboard/salesGrey.png");
+            activeMenu.id == 'sales' ? setSalesColor("white") : setSalesColor("#7f7f7f");
+            activeMenu.id == 'sales' ? setSalesImage("/dashboard/salesWhite.png") : setSalesImage("/dashboard/salesGrey.png");
 
-            activeMenu.id == 'content9' ? setAuditColor("white") : setAuditColor("#7f7f7f");
-            activeMenu.id == 'content9' ? setAuditImage("/portfolio/invoice (2).png") : setAuditImage("/portfolio/invoice (1).png");
+            activeMenu.id == 'audit' ? setAuditColor("white") : setAuditColor("#7f7f7f");
+            activeMenu.id == 'audit' ? setAuditImage("/portfolio/invoice (2).png") : setAuditImage("/portfolio/invoice (1).png");
 
-            activeMenu.id == 'content10' ? setFinColor("white") : setFinColor("#7f7f7f");
-            activeMenu.id == 'content10' ? setFinImage("/dashboard/finWhite.png") : setFinImage("/dashboard/finGrey.png");
+            activeMenu.id == 'thermalVision' ? setFinColor("white") : setFinColor("#7f7f7f");
+            activeMenu.id == 'thermalVision' ? setFinImage("/dashboard/finWhite.png") : setFinImage("/dashboard/finGrey.png");
         }
     }
 
@@ -356,46 +356,46 @@ export default function PortfolioDetails() {
                 <div id="portfolioDetails" className='fontFamily'>
                     <div className={`dashboard ${isVisible ? 'h-[86.75vh]' : 'h-[74.5vh]'}`} id="container" style={{ overflow: "auto" }}>
                         {/* <div className='menuDetails'> */}
-                        <div className='menuRowDetails' onClick={() => handleMenuClick('content1')}>
+                        <div className='menuRowDetails' onClick={() => handleMenuClick('edTech')}>
                             <div><img src={edTechImage} className="w-8" /></div>
                             {/* <div className='relative'> */}
                                 <div style={{ color: edTechColor }} className='flex items-center'>Ed Tech</div>
                                 {/* <img src="/portfolio/ai_stamp.png" alt="" className='absolute top-0 right-0 w-[1rem] h-[1rem]' />
                             </div> */}
                         </div>
-                        <div className='menuRowDetails ' onClick={() => handleMenuClick('content2')}>
+                        <div className='menuRowDetails ' onClick={() => handleMenuClick('machineVision')}>
                             <div><img src={manufacturingImage_1} className="w-8" /></div>
                             <div style={{ color: manufacturingColor_1 }} className='flex items-center'>Machine Vision</div>
                         </div>
-                        <div className='menuRowDetails' onClick={() => handleMenuClick('content3')}>
+                        <div className='menuRowDetails' onClick={() => handleMenuClick('wellness')}>
                             <div><img src={wellnessImage} className="w-8" /></div>
                             <div style={{ color: wellnessColor }} className='flex items-center'>Wellness</div>
                         </div>
-                        <div className='menuRowDetails' onClick={() => handleMenuClick('content4')}>
+                        <div className='menuRowDetails' onClick={() => handleMenuClick('industrialPlatform')}>
                             <div><img src={industrialPlatformImage} className="w-8" /></div>
                             <div style={{ color: industrialPlatformColor }} className='flex items-center text-left'>Social</div>
                         </div>
-                        <div className='menuRowDetails ' onClick={() => handleMenuClick('content5')}>
+                        <div className='menuRowDetails ' onClick={() => handleMenuClick('manufacturing')}>
                             <div><img src={manufacturingImage_2} className="w-8" /></div>
                             <div style={{ color: manufacturingColor_2 }} className='flex items-center'>Manufacturing</div>
                         </div>
-                        <div className='menuRowDetails' onClick={() => handleMenuClick('content6')}>
+                        <div className='menuRowDetails' onClick={() => handleMenuClick('agriTech')}>
                             <div><img src={agriImage} className="w-8" /></div>
                             <div style={{ color: agriColor }} className='flex items-center'>Agri Tech</div>
                         </div>
-                        <div className='menuRowDetails' onClick={() => handleMenuClick('content7')}>
+                        <div className='menuRowDetails' onClick={() => handleMenuClick('eCommerce')}>
                             <div><img src={eComImage} className="w-8" /></div>
                             <div style={{ color: eComColor }} className='flex items-center'>E-Commerce</div>
                         </div>
-                        <div className='menuRowDetails' onClick={() => handleMenuClick('content8')}>
+                        <div className='menuRowDetails' onClick={() => handleMenuClick('sales')}>
                             <div><img src={salesImage} className="w-8" /></div>
                             <div style={{ color: salesColor }} className='flex items-center'>Sales</div>
                         </div>
-                        <div className='menuRowDetails' onClick={() => handleMenuClick('content9')}>
+                        <div className='menuRowDetails' onClick={() => handleMenuClick('audit')}>
                             <div><img src={auditImage} className="w-8" /></div>
                             <div style={{ color: auditColor }} className='flex items-center'>Audit</div>
                         </div>
-                        <div className='menuRowDetails' onClick={() => handleMenuClick('content10')}>
+                        <div className='menuRowDetails' onClick={() => handleMenuClick('thermalVision')}>
                             <div><img src={finImage} className="w-8" /></div>
                             <div style={{ color: finColor }} className='flex items-center'>Fin Tech</div>
                         </div>
@@ -404,7 +404,7 @@ export default function PortfolioDetails() {
                     {portfolio.map((item) => (
                         //  id={item.id}
                         <section key={item.id} id={item.id} >
-                            <div className={`caseDetails ${item.id === 'content1' ? 'pt-[10%]' : 'pt-[5%]'}`}>
+                            <div className={`caseDetails ${item.id === 'edTech' ? 'pt-[10%]' : 'pt-[5%]'}`}>
                                 <div className='caseHeader'>
                                     <div className='caseHeaderIconContent '>
                                         <div className="flex flex-row-reverse">
@@ -591,7 +591,7 @@ export default function PortfolioDetails() {
                                 )}
                             </div>
 
-                            {/* {item.id === "content2" && (
+                            {/* {item.id === "machineVision" && (
                                 <div className="pl-5">
                                     <div className='flex items-center justify-center'>
                                         <img src="/output/sales.png" className='' />
@@ -600,7 +600,7 @@ export default function PortfolioDetails() {
 
 
                             )}
-                            {item.id === "content1" && (
+                            {item.id === "edTech" && (
                                 <div className="pl-5">
                                     <div className='flex items-center justify-center'>
                                         <img src="/output/anyoFinalOutput.png" className='' />
