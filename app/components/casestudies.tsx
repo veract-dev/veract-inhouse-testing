@@ -484,10 +484,10 @@ export default function Casestudies() {
             <div
               onClick={() => {
                 {
-                  getCategory.setState({ category: "content5" });
+                  getCategory.setState({ category: "content7" });
                   router.push({
                     pathname: "/customer-success",
-                    query: { category: "content5" },
+                    query: { category: "content7" },
                   });
                 }
               }}
@@ -521,10 +521,10 @@ export default function Casestudies() {
             <div
               onClick={() => {
                 {
-                  getCategory.setState({ category: "content6" });
+                  getCategory.setState({ category: "content9" });
                   router.push({
                     pathname: "/customer-success",
-                    query: { category: "content6" },
+                    query: { category: "content9" },
                   });
                 }
               }}
