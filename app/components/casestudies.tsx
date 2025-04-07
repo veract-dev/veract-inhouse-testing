@@ -60,37 +60,37 @@ export default function Casestudies() {
 
   const portfolio = [
     {
-      id: "content1",
+      id: "edTech",
       img: "/portfolio/Group.svg",
       heading: "EDTECH",
       desc: "AI driven e learning application with state of the art voice to text and large language model capabilities.",
     },
     {
-      id: "content3",
+      id: "wellness",
       img: "/portfolio/healthCaseStudy.svg",
       heading: "WELLNESS",
       desc: "Empowering individuals through personalized mental health and wellness solutions in a user-friendly app.",
     },
     {
-      id: "content2",
+      id: "machineVision",
       img: "/portfolio/carbon_industry.svg",
       heading: "MACHINE VISION",
       desc: "AI-driven defect detection system, optimizing manufacturing processes for higher efficiency and accuracy.",
     },
     {
-      id: "content4",
+      id: "industrialPlatform",
       img: "/portfolio/socialCaseStudy.svg",
       heading: "INDUSTRIAL PLATFORM",
       desc: "Specialized social platform connecting professionals in the data center industry for collaboration and networking.",
     },
     {
-      id: "content7",
+      id: "eCommerce",
       img: "/portfolio/eCommerceCaseStudy.svg",
       heading: "E-COMMERCE",
       desc: "E-commerce platform enabling farmers to sell fresh produce directly to consumers, bridging the gap in the supply chain.",
     },
     {
-      id: "content9",
+      id: "audit",
       img: "/portfolio/invoiceCaseStudy.svg",
       heading: "AUDIT",
       desc: "Advanced data extraction tool for precise, efficient audit processes, ensuring accuracy and compliance.",
@@ -129,14 +129,15 @@ export default function Casestudies() {
                   key={item.id}
                   className="item flex flex-col contentWidth navbarCursor manufacturingHover md:w-1/3 p-4"
                 >
-<div
-    onClick={() => {
-        getCategory.setState({ category: item.id });
-        router.push(`/customer-success?category=${item.id}`); // Remove scroll option
-    }}
->
-
-
+                  <div
+                    onClick={() => {
+                      getCategory.setState({ category: item.id });
+                      router.push({
+                        pathname: "/customer-success",
+                        query: { [item.id]: "" },
+                      });
+                    }}
+                  >
                     <div
                       className={`scroll-animationPortfolio ${
                         isVisible ? "visibleManufacturing" : ""
@@ -293,7 +294,7 @@ export default function Casestudies() {
             <div
               onClick={() => {
                 {
-                  setCategory("content1");
+                  setCategory("edTech");
                   router.push("/customer-success");
                 }
               }}
@@ -331,10 +332,10 @@ export default function Casestudies() {
             <div
               onClick={() => {
                 {
-                  getCategory.setState({ category: "content3" });
+                  getCategory.setState({ category: "wellness" });
                   router.push({
                     pathname: "/customer-success",
-                    query: { category: "content3" },
+                    query: { wellness: "" },
                   });
                 }
               }}
@@ -392,10 +393,10 @@ export default function Casestudies() {
             <div
               onClick={() => {
                 {
-                  getCategory.setState({ category: "content2" });
+                  getCategory.setState({ category: "machineVision" });
                   router.push({
                     pathname: "/customer-success",
-                    query: { category: "content2" },
+                    query: { machineVision: "" },
                   });
                 }
               }}
@@ -427,10 +428,10 @@ export default function Casestudies() {
             <div
               onClick={() => {
                 {
-                  getCategory.setState({ category: "content4" });
+                  getCategory.setState({ category: "industrialPlatform" });
                   router.push({
                     pathname: "/customer-success",
-                    query: { category: "content4" },
+                    query: { industrialPlatform: "" },
                   });
                 }
               }}
@@ -484,10 +485,10 @@ export default function Casestudies() {
             <div
               onClick={() => {
                 {
-                  getCategory.setState({ category: "content5" });
+                  getCategory.setState({ category: "eCommerce" });
                   router.push({
                     pathname: "/customer-success",
-                    query: { category: "content5" },
+                    query: { eCommerce: "" },
                   });
                 }
               }}
@@ -521,10 +522,10 @@ export default function Casestudies() {
             <div
               onClick={() => {
                 {
-                  getCategory.setState({ category: "content6" });
+                  getCategory.setState({ category: "audit" });
                   router.push({
                     pathname: "/customer-success",
-                    query: { category: "content6" },
+                    query:  "audit" ,
                   });
                 }
               }}

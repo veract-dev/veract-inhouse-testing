@@ -7,7 +7,6 @@ import { Transform } from "stream";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 // import { useRouter } from 'next/router';
-
 import { usePathname } from "next/navigation";
 import Contacts from "./contacts";
 
@@ -26,12 +25,6 @@ export default function TopnavBar() {
   const scrollToSection = (sectionId: string) => {
     if (pathnames !== "/") {
       router.push(`/?sectionId=${sectionId}`);
-      // router.push({
-      //   pathname:"/",
-      //   query:{
-      //     "section":"Text"
-      //   }
-      // })
       const section = document.getElementById(sectionId);
       console.log(section);
       scrollToElement(sectionId);
@@ -100,7 +93,8 @@ export default function TopnavBar() {
       ? "Home"
       : pathname === "/updatedCaseStudy/"
       ? "CustomerSuccess"
-      : ""
+      : pathname === "/customer-success/"
+      ? "CustomerSuccess" :""
   );
 
   console.log("activeSection", activeSection);
@@ -265,7 +259,7 @@ export default function TopnavBar() {
                           >
                             <a
                               className="customer "
-                              href="/customer-success/?category=content1"
+                              href="/customer-success/?edTech"
                             >
                               Customer Success
                             </a>
@@ -299,7 +293,7 @@ export default function TopnavBar() {
                         >
                           <a
                             className="desktopPortfolioText flex items-center justify-center navbarCursor  whitespace-nowrap menu-item"
-                            href="/customer-success/?category=content1"
+                            href="/customer-success/?edTech"
                           >
                             Customer Success
                           </a>

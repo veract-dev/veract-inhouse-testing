@@ -23,7 +23,7 @@ export default function HrTech(){
 
     const portfolio=[
         {
-            id:'content1',
+            id:'edTech',
             caseTitle:'Health and wellness web  and mobile app ',
             caseTitleContent:'Anyo is a health and wellness app tackling the important challenge of mental well being .',
             stampImage: "",
@@ -41,7 +41,7 @@ export default function HrTech(){
             clientSpeak:""
         },
         {
-            id:'content2',
+            id:'machineVision',
             caseTitle:'Sales enquiry and quote management  ',
             caseTitleContent:'Rajdeep is a multi principal,multi product,multi location industrial products distributor based out of pune.  ',
             stampImage: "",
@@ -59,7 +59,7 @@ export default function HrTech(){
             clientSpeak:""
         },
         {
-            id:'content3',
+            id:'wellness',
             caseTitle:'Machine vision for manufacturing quality control',
             caseTitleContent:'A sheet metal pressings manufacturing company.',
             stampImage: "portfolio/artificial-intelligence.png",
@@ -77,7 +77,7 @@ export default function HrTech(){
             clientSpeak:""
         },
         {
-            id:'content4',
+            id:'industrialPlatform',
             caseTitle:' Quality documentation for metal foundry   ',
             caseTitleContent:'Grey iron and ductile iron foundry looking for an automated quality report generation for customer submission . ',
             stampImage: "",
@@ -95,7 +95,7 @@ export default function HrTech(){
             clientSpeak:""
         },
         // {
-        //     id:'content2',
+        //     id:'machineVision',
         //     caseTitle:'Health and wellness web  and mobile app ',
         //     caseTitleContent:'Anyo is a health and wellness app tackling the important challenge of mental well being .',
         //     stampImage: "",
@@ -113,7 +113,7 @@ export default function HrTech(){
         //     clientSpeak:""
         // },
         // {
-        //     id:'content3',
+        //     id:'wellness',
         //     caseTitle:'Sales enquiry and quote management  ',
         //     caseTitleContent:'Rajdeep is a multi principal,multi product,multi location industrial products distributor based out of pune.  ',
         //     stampImage: "",
@@ -131,7 +131,7 @@ export default function HrTech(){
         //     clientSpeak:""
         // },
         {
-            id:'content5',
+            id:'manufacturing',
             caseTitle:'Agriculture finance ecosystem web application ',
             caseTitleContent:'KiVi by agrosperity is a phygital platform that seamlessly enables farmers and agri, rural entrepreneurs to access timely and efficient capital.',
             stampImage: "",
@@ -149,7 +149,7 @@ export default function HrTech(){
             clientSpeak:"We engaged with Veract team from an early stage and they helped build out our 'KiViStar' App from basic day one concept. Their choice of architecture, framework and ability to deliver the product helped us go to market quickly. This helped us focus on our core work.",
         },
         {
-            id:'content6',
+            id:'agriTech',
             caseTitle:'Machine vision for manufacturing quality control',
             caseTitleContent:'A sheet metal pressings manufacturing company.',
             stampImage: "",
@@ -167,7 +167,7 @@ export default function HrTech(){
             clientSpeak:""
         },
         {
-            id:'content7',
+            id:'eCommerce',
             caseTitle:' Credit risk assessment and risk profiling ',
             caseTitleContent:'Northern Arc Capital is a platform in the financial services sector set up primarily with the mission of catering to the diverse credit requirements of under-served households and businesses.',
             stampImage: "",

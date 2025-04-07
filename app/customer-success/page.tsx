@@ -7,7 +7,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { getCategory } from "../globalState";
 import mobileCustomerSuccess from "../mobileCustomerSuccess";
 import UpdatedCaseStudy from "../components/updatedCaseStudy";
-
+import '../styles/styles.css';
 interface MobileCustomerSuccessProps {
     id: string;
     title: string;
@@ -51,14 +51,18 @@ const Page = () => {
 
     // Get category from URL and update Zustand state
     useEffect(() => {
-        const queryCategory = searchParams ? searchParams.get("category") : null;
+        // Get the category from the URL - now it's the first query parameter without a name
+        const urlParams = new URLSearchParams(window.location.search);
+        const queryCategory = urlParams.keys().next().value || null;
+        
         if (queryCategory) {
             setCategory(queryCategory);
             setSelectedPage(
                 mobileCustomerSuccess.filter((item) => item.id === queryCategory) as MobileCustomerSuccessProps[]
             );
+            setIsContentLoaded(true);
         } else {
-          router.push('/customer-success/?category=content1')          
+          router.push('/customer-success/?edTech');
         }
     }, [searchParams]);
 
@@ -74,7 +78,7 @@ const Page = () => {
 
     const handleClick = (id: string) => {
         setCategory(id);
-        router.push(`/customer-success?category=${id}`);
+        router.push(`/customer-success?${id}`);
         setSelectedPage(
             mobileCustomerSuccess.filter((item) => item.id === id) as MobileCustomerSuccessProps[]
         );
@@ -298,11 +302,13 @@ const Page = () => {
           </div>
         </div>
       ) : (
-        <div>
-          <TopnavBar />
-          <UpdatedCaseStudy />
-          <Footer />
-        </div>
+<div >
+  <TopnavBar />
+  <UpdatedCaseStudy />
+  <Footer />
+</div>
+
+
       );
 };
 

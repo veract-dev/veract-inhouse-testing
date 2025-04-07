@@ -2377,3 +2377,15 @@ ul {
   flex-direction: row;
   gap: 0.5rem;
 }
+
+/* .hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;     
+} */
+
+::-webkit-scrollbar{
+  display: none;
+}
